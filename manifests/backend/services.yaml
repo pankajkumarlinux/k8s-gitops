@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-service
+  name: backend-service
 spec:
   type: NodePort   # LoadBalancer in cloud
   selector:
-    app: frontend
+    app: backend
     #version: blue
   ports:
   - port: 80
