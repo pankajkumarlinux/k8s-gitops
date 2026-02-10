@@ -5,14 +5,22 @@ metadata:
   namespace: argocd
 spec:
   project: default
+
   source:
     repoURL: https://github.com/pankajkumarlinux/k8s-gitops.git
     targetRevision: main
-    path: manifests/frontend
+    path: charts/frontend
+    helm:
+      valueFiles:
+        - values.yaml
+
   destination:
     server: https://kubernetes.default.svc
     namespace: frontend
+
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

@@ -1,0 +1,21 @@
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: "1.25"
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  host: frontend.example.com
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 300m
+    memory: 256Mi
