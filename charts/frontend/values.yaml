@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: frontend
-  tag: "66ea7d81c27d4d554d9cafad1e1f7e523d382274"
+  tag: "0bca1096b833b4870158c2828e6beeaddbbaa34d"
 
 service:
   type: ClusterIP
