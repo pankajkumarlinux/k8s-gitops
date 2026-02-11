@@ -24,7 +24,7 @@ jobs:
         docker push $IMAGE
     - name: Update GitOps Repo
       run: |
-        git clone https://github.com/pankajkumarlinux/k8s-gitops.git
+        git clone https://x-access-token:${{ secrets.GITOPS_TOKEN }}@github.com/pankajkumarlinux/k8s-gitops.git
         cd k8s-gitops
         sed -i "s|tag:.*|tag: \"${{ github.sha }}\"|" charts/frontend/values.yaml
         git config user.email "ci@github.com"
