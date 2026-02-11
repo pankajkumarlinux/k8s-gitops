@@ -13,10 +13,10 @@ spec:
         app: {{ .Release.Name }}
     spec:
       containers:
-      - name: nginx
+      - name: frontend
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         ports:
-        - containerPort: 80
+        - containerPort: 5000
         resources:
           requests:
             cpu: {{ .Values.resources.requests.cpu }}
