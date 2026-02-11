@@ -3,6 +3,9 @@ name: Build & Push Image
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'web-app/**'
+      - 'Dockerfile'
 
 jobs:
   build:
