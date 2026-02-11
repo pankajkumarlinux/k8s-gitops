@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: nginx
-  tag: "d754055e026118faa251dfcca8074bcc2cd91a34"
+  tag: "08692f92c772551afccb2facc3d15631c663c9aa"
 
 service:
   type: ClusterIP
