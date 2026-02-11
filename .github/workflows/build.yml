@@ -20,7 +20,7 @@ jobs:
     - name: Build & Push
       run: |
         IMAGE=${{ secrets.DOCKERHUB_USER }}/frontend:${{ github.sha }}
-        docker build -t $IMAGE .
+        docker build -t $IMAGE web-app/.
         docker push $IMAGE
     - name: Update GitOps Repo
       run: |
