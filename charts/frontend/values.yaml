@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: pankajkumardocker/frontend
-  tag: "0bca1096b833b4870158c2828e6beeaddbbaa34d"
+  tag: "1783e4fb20562c5ee3afeceafcd5910db13140f6"
 
 service:
   type: ClusterIP
