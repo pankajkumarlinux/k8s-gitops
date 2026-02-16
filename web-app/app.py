@@ -3,6 +3,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello from Day 23 CI/CD 🚀"
+    return "Hello from Day 24 CI/CD 🚀"
 
 app.run(host="0.0.0.0", port=5000)
