@@ -1,0 +1,11 @@
+namespace: dev
+
+resources:
+  - ../../base
+
+patches:
+  - path: replica-patch.yaml
+
+images:
+  - name: pankajkumarlinux/frontend
+    newTag: dev
