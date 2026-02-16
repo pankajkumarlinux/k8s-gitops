@@ -11,6 +11,8 @@ service:
 ingress:
   enabled: true
   host: frontend.example.com
+  path: /
+  port: 5000
 
 resources:
   requests:
