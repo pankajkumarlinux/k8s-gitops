@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: pankajkumarlinux/frontend:latest
+          image: pankajkumarlinux/frontend:fec6cd889bab4252d18d29ebc092f0d4a13e1e6f
           ports:
             - containerPort: 5000
