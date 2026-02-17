@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: frontend-stg
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/pankajkumarlinux/k8s-gitops.git
+    targetRevision: main
+    path: manifests/frontend/overlays/stg
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: stg
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

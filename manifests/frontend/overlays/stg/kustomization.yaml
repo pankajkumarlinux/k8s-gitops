@@ -1,0 +1,11 @@
+namespace: stg
+
+resources:
+  - ../../base
+
+patches:
+  - path: replica-patch.yaml
+
+images:
+  - name: pankajkumardocker/frontend
+    newTag: 773d4875efa6691f2639e201adabd29f07ff470c
