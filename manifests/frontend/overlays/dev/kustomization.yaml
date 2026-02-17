@@ -8,4 +8,4 @@ patches:
 
 images:
   - name: pankajkumarlinux/frontend
-    newTag: dev
+    newTag: 773d4875efa6691f2639e201adabd29f07ff470c
