@@ -25,6 +25,8 @@ jobs:
       run: |
         IMAGE=${{ secrets.DOCKERHUB_USER }}/frontend:${{ github.sha }}
         docker build -t $IMAGE ./web-app
+        docker build -t pankajkumarlinux/frontend:dev ./web-app
+        docker push pankajkumarlinux/frontend:dev
         docker push $IMAGE
     - name: Update GitOps Repo
       run: |
