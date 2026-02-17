@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: pankajkumardocker/frontend
-  tag: "fec6cd889bab4252d18d29ebc092f0d4a13e1e6f"
+  tag: "773d4875efa6691f2639e201adabd29f07ff470c"
 
 service:
   type: NodePort
